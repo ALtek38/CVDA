@@ -66,6 +66,8 @@ public class HerosFeu extends Hero
             System.out.println("Le Hero n'a pas assez de point de vie pour attaquer");
         }
         this.etat();
+        this.afficheVie();
         heroDefense.etat();
+        heroDefense.afficheVie();
     } 
 }

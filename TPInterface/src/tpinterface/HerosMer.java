@@ -67,7 +67,9 @@ public class HerosMer extends Hero
             System.out.println("Cas de figure non pris en compte");
         }
         this.etat();
+        this.afficheVie();
         heroDefense.etat();
+        heroDefense.afficheVie();
     }
     
     

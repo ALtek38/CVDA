@@ -68,4 +68,23 @@ public abstract class Hero  implements StructHeros
         }
     }
     
+    public void afficheVie()
+    {
+        String[][] vie = new String[4][100] ;
+        System.out.println("Vie:");
+        for (int j=0; j<4;j++){
+            System.out.println("");
+            System.out.print("[");
+            for (int i=0; i<this.pdv;i++) {
+                System.out.print("#");  
+            }
+            double vieRest = 100-this.pdv;
+            for (int i=0; i<vieRest;i++) {
+                System.out.print("_");
+            }
+            System.out.print("]");
+        }
+        System.out.println("");
+    }
+
 }
